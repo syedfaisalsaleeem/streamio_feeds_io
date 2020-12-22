@@ -1,0 +1,19 @@
+{
+	
+}	
+
+		"likes":{
+			"no_of_likes":"20",//demo no of likes
+			"persons":[
+				{
+					"id":"person_id",//the person who liked the post his profile id
+					"picture":""
+				},
+				{
+
+				}
+			]
+		},
+		"comments":{
+			"no_of_comments":"124",
+		}

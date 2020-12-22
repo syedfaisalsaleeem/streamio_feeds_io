@@ -1,0 +1,17 @@
+Serverless: Stack update finished...
+Service Information
+service: my-python
+stage: dev
+region: us-east-1
+stack: my-python-dev
+resources: 17
+api keys:
+  None
+endpoints:
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/
+functions:
+  hello: my-python-dev-hello
+layers:
+  None
+Serverless: Publishing service to the Serverless Dashboard...
+Serverless: Successfully published your service to the Serverless Dashboard: https://app.serverless.com/faisalorg/apps/my-python/my-python/dev/us-east-1

@@ -1,0 +1,57 @@
+Service Information
+service: my-python
+stage: dev
+region: us-east-1
+stack: my-python-dev
+resources: 158
+api keys:
+  None
+endpoints:
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/likes
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/createpost
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/trendinghashtags
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/followinguser
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/followpage
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/timelinefeed
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/userprofile
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/pagefeed
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/pageprofile
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/usersprofilefeed
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/likefeed
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/unlikefeed
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/checklike
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/commentfeed
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/likesfeed
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/commentsfeed
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/unfollowpage
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/followuser
+  POST - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/unfollowuser
+  GET - https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/hashtagfeed
+functions:
+  hello: my-python-dev-hello
+  likes: my-python-dev-likes
+  createpost: my-python-dev-createpost
+  trendinghashtags: my-python-dev-trendinghashtags
+  nooffollowers: my-python-dev-nooffollowers
+  followthepages: my-python-dev-followthepages
+  timelinesfeed: my-python-dev-timelinesfeed
+  usersprofiledata: my-python-dev-usersprofiledata
+  pagesfeed: my-python-dev-pagesfeed
+  pagesprofile: my-python-dev-pagesprofile
+  usersprofilefeed: my-python-dev-usersprofilefeed
+  likethefeed: my-python-dev-likethefeed
+  unlikethefeed: my-python-dev-unlikethefeed
+  checkthefeed: my-python-dev-checkthefeed
+  commentthefeed: my-python-dev-commentthefeed
+  getlikesfeed: my-python-dev-getlikesfeed
+  getcommentsfeed: my-python-dev-getcommentsfeed
+  unfollowthepage: my-python-dev-unfollowthepage
+  followtheuser: my-python-dev-followtheuser
+  unfollowtheuser: my-python-dev-unfollowtheuser
+  gethashtagsfeed: my-python-dev-gethashtagsfeed
+layers:
+  None
+Serverless: Removing old service artifacts from S3...
+Serverless: Publishing service to the Serverless Dashboard...
+Serverless: Successfully published your service to the Serverless Dashboard: https://app.serverless.com/faisalorg/apps/my-python/my-python/dev/us-east-1
