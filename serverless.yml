@@ -161,8 +161,10 @@ functions:
             parameters:
               querystrings:
                 userid: true
-            template:
-              application/json: '{ "userid":"$input.params(''userid'')"}'
+                limit: true
+                offset: true
+            # template:
+            #   application/json: '{ "userid":"$input.params(''userid'')"},"limit":"$input.params(''limit'')","offset":"$input.params(''offset'')"}' 
           response:
             headers:
               Content-Type: "'application/json'"
@@ -205,8 +207,11 @@ functions:
             parameters:
               querystrings:
                 pagename: true
+                userid: true
+                limit: true
+                offset: true
             template:
-              application/json: '{ "pagename":"$input.params(''pagename'')"}'
+              application/json: '{ "pagename":"$input.params(''pagename'')","userid":"$input.params(''userid'')","limit":"$input.params(''limit'')","offset":"$input.params(''offset'')"}' 
           response:
             headers:
               Content-Type: "'application/json'"
@@ -247,8 +252,9 @@ functions:
             parameters:
               querystrings:
                 userid: true
-            template:
-              application/json: '{ "userid":"$input.params(''userid'')"}'
+                limit: true
+                offset: true
+              # application/json: '{ "userid":"$input.params(''userid'')"},"limit":"$input.params(''limit'')","offset":"$input.params(''offset'')"}' 
           response:
             headers:
               Content-Type: "'application/json'"
@@ -420,8 +426,11 @@ functions:
             parameters:
               querystrings:
                 hashtag: true
-            template:
-              application/json: '{ "hashtag":"$input.params(''hashtag'')"}'
+                userid: true
+                limit: true
+                offset: true
+            # template:
+            #   application/json: '{ "hashtag":"$input.params(''hashtag'')","userid":"$input.params(''userid'')"},"limit":"$input.params(''limit'')","offset":"$input.params(''offset'')"}'
           response:
             headers:
               Content-Type: "'application/json'"

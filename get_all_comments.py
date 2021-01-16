@@ -39,6 +39,6 @@ class Get_comments_user():
 		# return reactions
 # https://9q2d566izk.execute-api.us-east-1.amazonaws.com/dev/commentsfeed?activityid=bd3b9da6-33cc-11eb-a511-0a1200300037
 
-# x = Get_comments_user(activity_id="bd3b9da6-33cc-11eb-a511-0a1200300037")
+# x = Get_comments_user(activity_id="b4c7397a-363e-11eb-8080-80004f33ba1c")
 # y = x.get_all_comments_user()
 # print(y)

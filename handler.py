@@ -221,7 +221,7 @@ def following_the_page(event=None, context=None):
 @app.route('/timelinefeed')
 def list_timeline_feed(event=None, context=None):
     try:
-        x=Get_user_time_feed(userid=event['userid'])
+        x=Get_user_time_feed(userid=event['query']['userid'],limit=event['query']['limit'],offset=event['query']['offset'])
     except:
         response = {
             "statusCode": 404,
@@ -278,11 +278,11 @@ def get_profile_of_user(event=None, context=None):
 @app.route('/pagefeed')
 def get_feed_of_page(event=None, context=None):
     try:
-        x=Get_pages_feed(pagename=event['pagename'])
+        x=Get_pages_feed(pagename=event['pagename'],userid=event['userid'],limit=event['limit'],offset=event["offset"])
     except:
         response = {
             "statusCode": 404,
-            "body": "pagename is not defined"
+            "body": "pagename or userid or limit or offset is not defined"
         }
         return response
     try:
@@ -332,11 +332,11 @@ def get_profile_of_page(event=None, context=None):
 @app.route('/usersprofilefeed')
 def user_profile_feed(event=None, context=None):
     try:
-        x=Getuser_profile_Feed(userid=event['userid'])
+        x=Getuser_profile_Feed(userid=event['query']['userid'],limit=event['query']['limit'],offset=event['query']['offset'])
     except:
         response = {
             "statusCode": 404,
-            "body": "userid is not defined"
+            "body": "userid or limit or offset is not defined"
         }
         return response
     try:
@@ -608,11 +608,11 @@ def unfollow_the_user(event=None, context=None):
 @app.route('/hashtagfeed')
 def get_the_hashtag_feed(event=None, context=None):
     try:
-        x=Get_hashtags_Feed(hashtag=event['hashtag'])
+        x=Get_hashtags_Feed(hashtag=event['query']['hashtag'],userid=event['query']['userid'],limit=event['query']['limit'],offset=event['query']['offset'])
     except:
         response = {
             "statusCode": 404,
-            "body": "hashtag is not defined"
+            "body": "hashtag or userid or limit or offset is not defined"
         }
         return response
     try:
